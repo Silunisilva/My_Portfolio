@@ -22,3 +22,4 @@ if (sectionPos < screenPos) {
 }
 window.addEventListener("scroll", revealAbout);
 });
+
