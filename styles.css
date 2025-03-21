@@ -992,6 +992,103 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .navbar-nav .nav-link {
+      margin: 0 10px;
+      font-size: 1rem;
+      overflow: hidden;
+  }
+
+  .hero {
+      padding: 60px 10%;
+      gap: 150px;
+  }
+
+  .hero img {
+      width: 300px;
+      height: 300px;
+  }
+
+  .hero-text {
+      max-width: 100%;
+  }
+
+  .hero-text h1{
+    font-size: 3rem;
+}
+
+  .ph {
+      font-size: 2rem;
+  }
+
+  .card_container {
+      padding: 50px 10%;
+  }
+
+  .card {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .say-hi {
+      width: 100%;
+  }
+
+  .title, .paragraph {
+      font-size: 1.2rem;
+  }
+
+  .project-card, .skill-category-card, .tool-item, .card {
+      margin-bottom: 20px;
+  }
+
+  .skills-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .skills {
+      padding: 60px 10%;
+  }
+
+  .research-cards {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      align-items: center;
+  }
+
+  .card__title {
+      font-size: 1.2rem;
+  }
+
+  .card__subtitle {
+      font-size: 1rem;
+  }
+
+  .contact-container {
+      padding: 20px;
+  }
+
+  .contact-container h2 {
+      font-size: 1.2rem;
+  }
+
+  .contact-details {
+      gap: 10px;
+  }
+
+  .icon-content a {
+      width: 30px;
+      height: 30px;
+  }
+
+  .tool-details h3 {
+      font-size: 1rem;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar-nav .nav-link {
       margin: 0 10px;
