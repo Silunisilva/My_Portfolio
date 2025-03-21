@@ -794,9 +794,6 @@
             margin-top: 50px;
         }
 
-
-        /* Responsive Design */
-
         /* Responsive Design */
 @media (max-width: 768px) {
     .navbar-nav .nav-link {
@@ -842,6 +839,13 @@
     .project-card, .skill-category-card, .tool-item, .card {
         margin-bottom: 20px;
     }
+
+    .skills-grid {
+      grid-template-columns: 1fr;
+  }
+  .skills {
+      padding: 60px 10%;
+  }
 
     .research-cards {
         flex-direction: column;
@@ -893,9 +897,17 @@
         height: 150px;
     }
 
-    .skill-category-card h3 {
-        font-size: 1rem;
-    }
+
+    .skills {
+      padding: 40px 5%;
+      margin: 20px;
+  }
+  .skill-category-card h3 {
+      font-size: 1rem;
+  }
+  .skill-item h4 {
+      font-size: 0.9rem;
+  }
 
     .tool-item {
         flex-direction: column;
