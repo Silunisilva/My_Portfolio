@@ -38,7 +38,14 @@
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
         }
+
+        .hero-visible {
+          opacity: 1;
+          transform: translateY(0);
+      }
         .hero img {
             width: 450px;
             height: 400px;
@@ -155,7 +162,19 @@
     }
 }
 
-        
+.email-highlight a {
+  text-decoration: none;
+  font-size: 1.1em;
+  background: linear-gradient(to right, #5964e8, #6e7ace);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Adds shadow */
+  font-weight: bold;
+  font-family: "Radley", serif;
+}
+.email-highlight a:hover {
+  text-decoration: underline;
+} 
 
         /* About Me Section */
 
@@ -774,13 +793,8 @@
     #fd1f1f
   );
 }
-.example-2 .icon-content a[data-social="email"] .filled,
-.example-2 .icon-content a[data-social="email"] ~ .tooltip {
-  background-color: #165cdf;
-}
-
-.example-2 .icon-content a[data-social="phone"] .filled,
-.example-2 .icon-content a[data-social="phone"] ~ .tooltip {
+.example-2 .icon-content a[data-social="whatsapp"] .filled,
+.example-2 .icon-content a[data-social="whatsapp"] ~ .tooltip {
   background-color: #16df34;
 }
 
