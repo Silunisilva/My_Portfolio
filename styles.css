@@ -950,9 +950,17 @@
 
     .research-cards {
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
         width: 100%;
-        margin: 20px;
+        align-items: center;
+    }
+
+    .card__title{
+      font-size: 1.2rem;
+    }
+
+    .card__subtitle{
+      font-size: 1rem;
     }
 
     .contact-container {
@@ -964,7 +972,16 @@
   }
 
     .contact-details {
-        gap: 20px;
+        gap: 10px;
+    }
+
+    .icon-content a{
+      width: 30px;
+      height: 30px;
+    }
+
+    .tool-details h3{
+      font-size: 1rem;
     }
 }
 
@@ -1028,5 +1045,9 @@
     }
     .contact-container h2 {
       font-size: 1.2rem;
+  }
+
+  .tool-details h3{
+    font-size: 1rem;
   }
 }
