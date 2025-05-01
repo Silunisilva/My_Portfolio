@@ -1,6 +1,6 @@
  /* General Styles */
         body {
-            background: linear-gradient(to right, #141414, #212020); /* Adjust colors */
+            background: linear-gradient(to right, #0f0e0e, #0f0f0f); /* Adjust colors */
             color: #fff;
             margin: 0;
             padding: 0;
@@ -22,19 +22,22 @@
       
         /* Navbar */
         .navbar {
-            background-color: #000000;
+            border-radius: 25px;
+            background-color: #000;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             font-family: 'Roboto', sans-serif;
             position: relative;
+            margin: 1%;
         }
         .navbar-brand {
             font-family: 'Lora', serif;
             font-size: 2.5rem;
             font-weight: bold;
-            color: #f7f7f7 !important;
+            color: #df87b7 !important;
+            margin: 0.5%;
         }
         .navbar-nav .nav-link {
-            color: #fff !important;
+            color: #df87b7 !important;
             margin: 0 15px;
             font-size: 1.2rem;
             font-weight: 600;
@@ -45,7 +48,7 @@
         }
       /* Hero Section */
 .hero {
-    background-color: #000;
+    background-color: #ec70bb;
     color: white;
     padding: 10% 12%; /* Use percentage for padding */
     display: flex;
@@ -65,9 +68,8 @@
     width: 40%; /* Adjusts width to 30% of the parent container */
     aspect-ratio: 1 / 1; /* Ensures the image remains a circle */
     max-width: 450px; /* Ensures the image doesn't exceed 450px in width */
-    border-radius: 50%;
+    border-radius: 10%;
     object-fit: cover;
-    border: 5px solid #090908;
     margin-right: 5%; /* Use percentage for margin */
     margin-top: 2%; /* Use percentage for margin */
     transition: transform 0.3s ease;
@@ -88,10 +90,11 @@
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background: linear-gradient(to right, #0f1f65, #b109ee);
+    background: linear-gradient(to right, #ed2168, #eb49e3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    
 }
 
 .hero h2 {
@@ -99,7 +102,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: clamp(1rem, 2.5vw, 1.5rem); /* Responsive font size */
-    background: linear-gradient(to right, #3341da, #69339f);
+    background: linear-gradient(to right, #be0896, #f13690);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
@@ -123,10 +126,10 @@
     padding: 3% 4%; /* Use percentage for padding */
     font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsive font size */
     color: #fff;
-    background: linear-gradient(to right, #8be3fc, #576bff);
+    background: linear-gradient(to right, #6a1743, #3a0431);
     box-shadow: 0 20px 30px -7px rgba(97, 118, 238, 0.5);
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
     text-decoration: none;
     position: relative;
     overflow: hidden;
@@ -196,6 +199,7 @@
   cursor: pointer;
   position: relative;
   padding: 100px;
+  background-color: #050505;
 }
 
 .card_hover {
@@ -277,9 +281,9 @@
   background-color: rgb(172, 250, 233);
   background-image: linear-gradient(
     135deg,
-    rgb(44, 113, 192) 0%,
-    rgb(64, 83, 182) 50%,
-    rgb(132, 137, 174) 100%
+    rgb(197, 21, 103) 0%,
+    rgb(227, 80, 163) 50%,
+    rgb(234, 235, 240) 100%
   );
 
   border-radius: 25rem;
@@ -1322,3 +1326,71 @@
         font-size: 1rem;
     }
 }
+
+/* Education Section */
+#education {
+    padding: 60px 20px;
+    background-color: #f7f0f4;
+    position: relative;
+    overflow: hidden;
+    margin: 1%;
+}
+
+.education-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.education-entry {
+    position: relative;
+    
+    border-left: 4px solid #6b73ff;
+    padding: 20px;
+    padding-left: 30px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-entry h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.education-entry p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #666;
+}
+
+.education-entry:hover {
+    transform: translateX(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation for education entries */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.education-entry {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.education-entry:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.education-entry:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
