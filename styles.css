@@ -23,7 +23,7 @@
         /* Navbar */
         .navbar {
             border-radius: 25px;
-            background: linear-gradient(to right, #5a042c, #060606);
+            background: linear-gradient(to right, #031750, #450336);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             font-family: 'Roboto', sans-serif;
             position: relative;
@@ -49,8 +49,8 @@
         }
       /* Hero Section */
 .hero {
-    /* background: linear-gradient(to right, #f9f5f5, #d37cb3); */
-    background-color: #000;
+     /* background: linear-gradient(to right, #2e5bd6, #ffffff);   */
+      background-color: #060606;  
     color: white;
     padding:10% 12%; /* Use percentage for padding */
     display: flex;
@@ -70,17 +70,31 @@
     width: 40%; /* Adjusts width to 30% of the parent container */
     aspect-ratio: 1 / 1; /* Ensures the image remains a circle */
     max-width: 450px; /* Ensures the image doesn't exceed 450px in width */
-    border-radius: 10%;
+    border-radius: 50%;
     object-fit: cover;
     margin-right: 5%; /* Use percentage for margin */
     margin-top: 2%; /* Use percentage for margin */
     box-shadow: 0 4px 15px rgb(8, 8, 8);
     transition: transform 0.3s ease;
     border: 1px black;
+    opacity: 0; /* Initially hide the image */
+    animation: fadeIn 1s ease-in-out forwards; /* Apply fade-in animation */
 }
 
 .hero img:hover {
     transform: scale(1.1);
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Start slightly below the final position */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Move to the final position */
+    }
 }
 
 .hero-text {
@@ -94,7 +108,7 @@
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background: linear-gradient(to right, #ef36a5ee, #2e0110);
+    background: linear-gradient(to right, #051760ee, #c35ad8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
@@ -131,7 +145,7 @@
     padding: 3% 4%; /* Use percentage for padding */
     font-size: clamp(1rem, 2.5vw, 1.2rem); /* Responsive font size */
     color: #fff;
-    background: linear-gradient(to right, #d15f98, #070707);
+    background: linear-gradient(to right, #4b0227, #021c51);
     box-shadow: 0 20px 30px -7px rgba(97, 118, 238, 0.5);
     border: none;
     border-radius: 15px;
@@ -287,9 +301,9 @@
   background-color: rgb(172, 250, 233);
   background-image: linear-gradient(
     135deg,
-    rgb(225, 122, 170) 0%,
-    rgb(194, 28, 122) 50%,
-    rgb(56, 6, 23) 100%
+    rgb(192, 19, 100) 0%,
+    rgb(81, 126, 216) 50%,
+    rgb(204, 128, 200) 100%
   );
 
   border-radius: 25rem;
@@ -309,7 +323,7 @@
 .icon_say-hi {
   position: absolute;
   bottom: 0;
-  left: -0.5rem;
+  left: 7rem;
 
   width: 3rem;
 
@@ -344,7 +358,7 @@
         /* Projects Section */
         #projects {
             padding: 80px 15%;
-            background: linear-gradient(to right, #f9f5f5, #d37cb3);
+            background: linear-gradient(to right, #000000, #010315);
         }
         .project-card {
             background-color: #222;
@@ -492,7 +506,7 @@
     .skill-item i {
         font-size: 1.2rem;
         margin-bottom: 5px;
-        color: #4f74e4;
+        color: #04032f;
     }
     .skill-item h4 {
         font-size: 1rem;
@@ -508,13 +522,13 @@
     }
     .progress-bar {
         height: 100%;
-        background-color: #4f74e4;
+        background-color: #030b4b;
         border-radius: 5px;
     }
         /* Tools Section */
         .main-container {
         padding: 80px 15%;
-        background-color: #1a1a1a;
+        background-color: #000000;
     }
     .section-heading {
         text-align: center;
@@ -530,7 +544,7 @@
         align-items: center;
         width: 48%;
         margin-bottom: 20px;
-        background: #222;
+        background: linear-gradient(to right, #490346, #132dc3);
         border-radius: 10px;
         padding: 15px;
         transition: transform 0.3s ease, background-color 0.3s ease;
@@ -563,6 +577,7 @@
     gap: 25px;
     width: 80%;
     margin: 40px;
+    
 }
 
 .rcard {
@@ -578,7 +593,7 @@
     display: flex;
     flex-direction: column;
   
-    background-color:#262728;
+    background-color:#080808;
     transition: all 0.2s;
     cursor: pointer;
     box-shadow: 0px 0px 5px -1.5px #000;
@@ -1150,7 +1165,7 @@
     .hero img {
         width: 60%; /* Adjust image size for phones */
         margin-right: 0; /* Remove margin for phones */
-        margin-top: 5%; /* Adjust margin for phones */
+        margin-top: 60%; /* Adjust margin for phones */
     }
 
     .hero h1 {
@@ -1404,93 +1419,69 @@
     animation-delay: 0.4s;
 }
 
-.e-card {
-    margin: 100px auto;
-    background: transparent;
-    box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
-    position: relative;
-    width: 240px;
-    height: 330px;
-    border-radius: 16px;
-    overflow: hidden;
-  }
-  
-  .wave {
-    position: absolute;
-    width: 540px;
-    height: 700px;
-    opacity: 0.6;
-    left: 0;
-    top: 0;
-    margin-left: -50%;
-    margin-top: -70%;
-    background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);
-  }
-  
-  .icon {
-    width: 3em;
-    margin-top: -1em;
-    padding-bottom: 1em;
-  }
-  
-  .infotop {
-    text-align: center;
-    font-size: 20px;
-    position: absolute;
-    top: 5.6em;
-    left: 0;
-    right: 0;
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-  }
-  
-  .name {
-    font-size: 14px;
-    font-weight: 100;
-    position: relative;
-    top: 1em;
-    text-transform: lowercase;
-  }
-  
-  .wave:nth-child(2),
-  .wave:nth-child(3) {
-    top: 210px;
-  }
-  
-  .playing .wave {
-    border-radius: 40%;
-    animation: wave 3000ms infinite linear;
-  }
-  
-  .wave {
-    border-radius: 40%;
-    animation: wave 55s infinite linear;
-  }
-  
-  .playing .wave:nth-child(2) {
-    animation-duration: 4000ms;
-  }
-  
-  .wave:nth-child(2) {
-    animation-duration: 50s;
-  }
-  
-  .playing .wave:nth-child(3) {
-    animation-duration: 5000ms;
-  }
-  
-  .wave:nth-child(3) {
-    animation-duration: 45s;
-  }
-  
-  @keyframes wave {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-  }
 
-  
+
+  .corner-image {
+    position: absolute;
+    top: 8%; /* Adjust the top position as needed */
+    left: 2%; /* Adjust the left position as needed */
+    width: 10%; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 30PX;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.card {
+    position: relative; /* Ensure the card is positioned relative to its normal position */
+}
+
+/* Make the image responsive on smaller screens */
+@media (max-width: 768px) {
+    .corner-image {
+        width: 20%; /* Adjust the width for smaller screens */
+        top: 2%; /* Adjust the top position for smaller screens */
+        left: 10%; /* Adjust the left position for smaller screens */
+    }
+
+}
+
+/* Responsive Design for Education Section */
+@media (max-width: 768px) {
+    .education-flow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education-entry {
+        width: 100%;
+        max-width: 400px;
+        padding: 15px;
+        padding-left: 20px;
+    }
+
+    .education-entry h3 {
+        font-size: 1.2em;
+    }
+
+    .education-entry p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-entry {
+        padding: 10px;
+        padding-left: 15px;
+    }
+
+    .education-entry h3 {
+        font-size: 1em;
+    }
+
+    .education-entry p {
+        font-size: 0.8em;
+    }
+}
+
+
+ 
